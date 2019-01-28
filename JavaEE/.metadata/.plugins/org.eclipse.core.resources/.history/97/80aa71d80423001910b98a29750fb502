@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Temp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		float temp;
+		
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Temperatura u Celzijusu je: ");
+		temp = in.nextInt();
+		
+		
+
+	}
+
+}

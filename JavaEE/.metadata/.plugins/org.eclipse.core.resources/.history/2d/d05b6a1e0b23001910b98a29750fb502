@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Equals {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String proizvod;
+		
+		System.out.println("Unesite proizvod: ");
+		Scanner s = new Scanner(System.in);
+		proizvod = s.nextLine();
+		
+	}
+
+}
