@@ -8,11 +8,11 @@
 
 
 <b>FrontEnd
- * site "ROBOTECH"
+ * <i>site "ROBOTECH"</i>
 
 
 <b>Oracle Database
- * Oracle SQL Developer
- * Oracle SQL Developer - Data Modeler
- * Queries
- * Modeling Base 
+ * <i>Oracle SQL Developer</i>
+ * <i>Oracle SQL Developer - Data Modeler</i>
+ * <i>Queries</i>
+ * <i>Modeling Base</i>
