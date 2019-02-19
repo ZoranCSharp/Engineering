@@ -7,11 +7,11 @@
 </br>
 
 
-<b>FrontEnd
+<b>FrontEnd</b>
  * <i>site "ROBOTECH"</i>
 
 
-<b>Oracle Database
+<b>Oracle Database</b>
  * <i>Oracle SQL Developer</i>
  * <i>Oracle SQL Developer - Data Modeler</i>
  * <i>Queries</i>
