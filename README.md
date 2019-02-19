@@ -9,3 +9,10 @@
 
 <b>FrontEnd
  >* site "ROBOTECH"
+
+
+<b>Oracle Database
+ >*Oracle SQL Developer
+ >*Oracle SQL Developer - Data Modeler
+ >* Queries
+ >* Modeling Base 
