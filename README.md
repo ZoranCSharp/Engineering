@@ -8,7 +8,10 @@
 
 
 <b>FrontEnd</b>
- * <i>site "ROBOTECH"</i>
+ * <i>HTML</i>
+ * <i>CSS</i>
+ * <i>jQuery</i>
+ * <i>JavaScript</i>
 
 
 <b>Oracle Database</b>
