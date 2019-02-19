@@ -12,7 +12,7 @@
 
 
 <b>Oracle Database
- >*Oracle SQL Developer
- >*Oracle SQL Developer - Data Modeler
+ >* Oracle SQL Developer
+ >* Oracle SQL Developer - Data Modeler
  >* Queries
  >* Modeling Base 
