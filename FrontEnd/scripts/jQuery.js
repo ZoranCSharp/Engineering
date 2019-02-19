@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".togglebtn").click(function(){
+        $("p.normal").fadeToggle();
+        $("p.very-fast").fadeToggle(50);
+        $("p.fast").fadeToggle("fast");
+        $("p.slow").fadeToggle("slow");
+        $("p.very-slow").fadeToggle(5000);
+    });
+});

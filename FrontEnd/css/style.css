@@ -1,0 +1,1048 @@
+@charset "utf-8";
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+
+#topbar {
+  padding: 15px 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+#topbar * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#topbar ul li {
+  display: inline-block;
+  margin-right: 10px;
+  padding-right: 15px;
+  border-right: 1px solid;
+}
+
+#topbar ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+#topbar i {
+  margin: 0 5px 0 0;
+  line-height: normal;
+}
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+
+#header {}
+
+#header #logo {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "ROBOTECHGPRegular";
+}
+
+#header #logo * {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "ROBOTECHGPRegular";
+}
+
+#header #logo h1 {
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "ROBOTECHGPRegular";
+}
+
+#header #logo h2 {
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "ROBOTECHGPRegular";
+}
+
+#header #logo p {
+  margin-top: -2px;
+  font-size: 30px;
+  text-transform: lowercase;
+  font-family: "ROBOTECHGPRegular";
+}
+
+/* Body
+--------------------------------------------------------------------------------------------------------------- */
+
+.bkground {
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.bkground2 {
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: -2%;
+}
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+
+#footer {
+  padding: 30px 0;
+}
+
+#footer nav {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+#footer nav ul {}
+
+#footer nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#footer nav ul li:last-child {
+  margin-right: 0;
+}
+
+#footer .linklist li {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid;
+}
+
+#footer .linklist li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#footer .linklist li::before, #footer .linklist li::after {
+  display: table;
+  content: "";
+}
+
+#footer .linklist li, #footer .linklist li::after {
+  clear: both;
+}
+
+#footer .contact {}
+
+#footer .contact.linklist li, #footer .contact.linklist li:last-child {
+  position: relative;
+  padding-left: 40px;
+}
+
+#footer .contact li * {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1em;
+}
+
+#footer .contact li i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+
+#footer input, #footer button {
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+#footer input {
+  display: block;
+  width: 100%;
+  padding: 8px 15px;
+}
+
+#footer button {
+  padding: 8px 18px 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Transition Fade
+--------------------------------------------------------------------------------------------------------------- */
+
+*, *::before, *::after {
+  transition: all 0.3s ease-in-out;
+}
+
+#mainav form * {
+  transition: none !important;
+}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+
+nav ul, nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#mainav, #breadcrumb {
+  line-height: normal;
+}
+
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after {
+  position: absolute;
+  font-family: "FontAwesome";
+  font-size: 10px;
+  line-height: 1.1em;
+}
+
+/* Top Navigation */
+
+#mainav ul {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#mainav ul ul {
+  z-index: 9999;
+  position: absolute;
+  width: 160px;
+  text-transform: none;
+  text-align: left;
+}
+
+#mainav ul ul ul {
+  left: 160px;
+  top: 0;
+}
+
+#mainav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+#mainav li:last-child {
+  margin-right: 0;
+}
+
+#mainav li li {
+  width: 100%;
+  margin: 0;
+}
+
+#mainav li a {
+  display: block;
+  padding: 20px 0;
+}
+
+#mainav li li a {
+  border: solid;
+  border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+  padding-left: 15px;
+}
+
+#mainav li li a, #mainav li li .drop {
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+#mainav .drop::after, #mainav li li .drop::after {
+  content: "\f0d7";
+}
+
+#mainav .drop::after {
+  top: 25px;
+  left: 5px;
+}
+
+#mainav li li .drop::after {
+  top: 15px;
+  left: 5px;
+}
+
+#mainav ul ul {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#mainav ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#mainav form {
+  display: none;
+  margin: 0;
+  padding: 20px 0;
+}
+
+#mainav form select, #mainav form select option {
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+#mainav form select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid;
+}
+
+#mainav form select option {
+  margin: 5px;
+  padding: 0;
+  border: none;
+}
+
+/* Back to Top */
+
+#backtotop {
+  z-index: 999;
+  display: inline-block;
+  position: fixed;
+  visibility: hidden;
+  bottom: 20px;
+  right: 20px;
+  width: 37px;
+  height: 37px;
+  line-height: 36px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 34%;
+}
+
+#backtotop i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: inherit;
+}
+
+#backtotop.visible {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+#backtotop:hover {
+  opacity: 1;
+}
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+
+.faico {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faico li {
+  display: inline-block;
+  margin: 8px 5px 0 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.faico a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+
+.faico a {
+  color: inherit;
+  background-color: #283f6c;
+}
+
+.faico a:hover {
+  color: #ffffff;
+}
+
+.faicon-dribble:hover {
+  background-color: #ea4c89;
+}
+
+.faicon-facebook:hover {
+  background-color: #3b5998;
+}
+
+.faicon-google-plus:hover {
+  background-color: #db4a39;
+}
+
+.faicon-linkedin:hover {
+  background-color: #0e76a8;
+}
+
+.faicon-twitter:hover {
+  background-color: #00acee;
+}
+
+.faicon-vk:hover {
+  background-color: #4e658e;
+}
+
+/* Colors
+--------------------------------------------------------------------------------------------------------------- */
+
+/* Rows */
+
+.row0, .row0 a {
+  color: #ffbf00;
+  background-color: #141f35;
+}
+
+.row1 {
+  color: #ffffff;
+  background-color: #141f35;
+  margin-top: -50px;
+}
+
+.row2 {
+  color: #ffbf00;
+  background-color: #141f35;
+}
+
+/* Top Bar */
+
+#topbar>div:last-of-type li:first-child a {
+  color: red;
+}
+
+/* Header */
+
+#header #logo a {
+  color: inherit;
+}
+
+#header #logo p {
+  color: #ffbf00;
+}
+
+/* Footer */
+
+#footer .heading {
+  color: #ffffff;
+}
+
+#footer nav a {
+  color: inherit;
+}
+
+#footer nav li:first-child a, #footer nav a:hover {
+  color: red;
+}
+
+#footer .linklist li {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+#footer button {
+  color: #ffbf00;
+  background-color: red;
+}
+
+/* Navigation */
+
+#mainav li a {
+  color: inherit;
+}
+
+#mainav .active a, #mainav a:hover, #mainav li:hover>a {
+  color: #ffbf00;
+  background-color: inherit;
+}
+
+#mainav li li a, #mainav .active li a {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+#mainav li li:hover>a, #mainav .active .active>a {
+  color: #ffffff;
+  background-color: red;
+}
+
+#mainav form select {
+  color: #ffffff;
+  background-color: #141f35;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+#backtotop {
+  color: #ffffff;
+  background-color: rgb(0, 110, 255);
+}
+
+/* Glowing text
+--------------------------------------------------------------------------------------------------------------- */
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #bd8e00, 0 0 40px #bd8e00, 0 0 50px #bd8e00, 0 0 60px #bd8e00, 0 0 70px #bd8e00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #836302, 0 0 40px #836302, 0 0 50px #836302, 0 0 60px #836302, 0 0 70px #836302, 0 0 80px #836302;
+  }
+}
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1920px) {
+  .hidTXT {
+    max-width: 100%;
+  }
+
+  .typerwrite {
+    
+    margin-top: -75%;  
+    text-align: center;
+    
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hoc {
+    max-width: 1400px;
+  }
+}
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+  .hoc {
+    max-width: 90%;
+  }
+  #topbar {}
+  #header {}
+  #mainav {}
+  #mainav ul {
+    display: none;
+  }
+  #mainav form {
+    display: block;
+  }
+  #breadcrumb {}
+  .container {}
+  #footer {}
+  #copyright {}
+  #copyright p:first-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .imgl, .imgr {
+    display: inline-block;
+    float: none;
+    margin: 0 0 10px 0;
+  }
+  .fl_left, .fl_right {
+    display: block;
+    float: none;
+  }
+  .one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter {
+    display: block;
+    float: none;
+    width: auto;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+  #topbar {
+    text-align: center;
+  }
+  #topbar ul {
+    margin: 0 0 15px 0;
+  }
+  #pageintro li article {
+    max-width: none;
+    width: 100%;
+    overflow: visible;
+  }
+  #pageintro li .heading {
+    font-size: 3rem;
+  }
+  #cta article .heading {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .latest article {
+    max-width: 320px;
+  }
+  .container, #footer {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #topbar ul li {
+    margin-bottom: 2px;
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 650px) {
+  .scrollable {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 0;
+    overflow: auto;
+    overflow-x: scroll;
+  }
+  .scrollable table {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .inline li {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .pushright li {
+    margin-right: 0;
+  }
+  .font-x2 {
+    font-size: 1.4rem;
+  }
+  .font-x3 {
+    font-size: 1.6rem;
+  }
+  #cta article {
+    max-width: none;
+    width: 100%;
+  }
+  .hoc.split {
+    max-width: none;
+    width: 100%;
+  }
+  .split article {
+    float: none;
+    width: 100%;
+    padding: 10% 5%;
+  }
+}
+
+/* Pointer
+--------------------------------------------------------------------------------------------------------------- */
+
+.pointer {
+  cursor: pointer;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: black;
+}
+
+/* Set a style for all buttons */
+
+button {
+  width: 100%;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.button:before {
+  transform: none;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.about {
+  display: block;
+  position: absolute;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  color: #ffbf00;
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  padding-top: 20px;
+  border-radius: 20px;
+  margin-top: -65%;
+  margin-left: 35%;
+  width: 30%;
+  padding: 15px;
+}
+
+.about2 {
+  color: #ffbf00;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  padding-top: 20px;
+  margin-top: -37%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 552px;
+}
+
+.aboutBTN {
+  position: absolute;
+  margin-top: -22%;
+  margin-left: 45%;
+  padding: 0px 25px;
+}
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+  margin-top: -31px;
+}
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+  text-align: center;
+  margin: 25px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 15px;
+}
+
+span.psw {
+  margin-top: -100px;
+  float: right;
+}
+
+span.acc {
+  margin-top: -100px;
+  margin-left: 100px;
+}
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Sit on top */
+  right: 35%;
+  top: 180px;
+  color: #ffbf00;
+  width: 30%;
+  /* Full width */
+  height: 75%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.modal3 {
+  position: absolute;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  color: #ffbf00;
+  width: 100%;
+  margin-left: -6.2%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  margin-top: -25px;
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  margin: 0% auto 0% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  color: red;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.modal2 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Sit on top */
+  right: 35%;
+  top: 300px;
+  text-align: center;
+  color: #ffbf00;
+  width: 30%;
+  /* Full width */
+  height: 34%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  padding-top: -10px;
+  border-radius: 20px;
+}
+
+/* The Close Button (x) */
+
+.close2 {
+  position: absolute;
+  right: -34px;
+  top: -14px;
+  color: red;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.bgrnd {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal2-content {
+  margin: 0% auto 0% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.typerwrite {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: -90%;  
+  text-align: center;
+  font-size: 55px;
+  color: #ffbf00;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.carousel-wrapper {
+  display: block;
+  height: 550px;
+  position: absolute;
+  width: 800px;
+  margin-top: -55%;
+  margin-left: 25%;
+  margin-bottom: 0%;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.arrow-prev {
+  left: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+  right: -30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.light {
+  color: white;
+}
+
+/*Select every element*/
+
+[id^="item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: url('https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2016/09/robotech-new-generation.jpg?itok=TPr2TrzH');
+  background-size: cover;
+}
+
+.item-2 {
+  background: url('https://i.kinja-img.com/gawker-media/image/upload/s--i1-8UIaG--/c_scale,f_auto,fl_progressive,q_80,w_800/18yj8z9nvjlgljpg.jpg');
+  background-size: cover;
+}
+
+.item-3 {
+  background: url('https://www.geek.com/wp-content/uploads/2015/03/robotechbanner-625x350.jpg');
+  background-size: cover;
+}
+
+*:target~.item-1 {
+  opacity: 0;
+}
+
+#item-1:target~.item-1 {
+  opacity: 1;
+}
+
+#item-2:target~.item-2, #item-3:target~.item-3 {
+  z-index: 3;
+  opacity: 1;
+}
+
+@keyframes slidy {
+  0% {
+    left: 100%;
+  }
+}
+
+div#slider {
+  overflow: hidden;
+}
+
+div#slider figure img {
+  float: left;
+}
+
+div#slider figure {
+  position: absolute;
+  width: 0%;
+  left: 60%;
+  animation: 1s slidy;
+  margin-top: -65%;
+  z-index: 1;
+}
+
+@keyframes slidy1 {
+  0% {
+    right: 100%;
+  }
+}
+
+div#slider1 {
+  overflow: hidden;
+}
+
+div#slider1 figure img {
+  float: right;
+}
+
+div#slider1 figure {
+  position: absolute;
+  width: 50%;
+  right: 60%;
+  animation: 1s slidy1;
+  margin-top: -65%;
+  z-index: 1;
+}
+
+.hidTXT {
+  position: absolute;
+  margin-top: -58.5%;
+  width: 650px;
+  height: 750px;
+  margin-left: 32.5%;
+  color: #ffbf00;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  padding: 15px 34px 15px 34px;
+  border-radius: 25px;
+}

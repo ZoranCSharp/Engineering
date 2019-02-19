@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--HEAD-->
+<head>
+  <title>STORE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/robotech-gp" type="text/css"/>
+  <link href="css/framework.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</head>
+<!--END HEAD-->
+
+<!-- ################################################################################################ -->
+
+<body id="top">
+<!--HEADER TOP-->
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      
+      <div class="fl_left">
+        <ul>
+          <li><i style="color: red" class="fa fa-phone"></i>(+381) 011/ 1234-567</li>
+          <li><i style="color: red" class="fa fa-envelope-o"></i><a class="js-emaillink" href="mailto:info@robot.gmail.com">info@robot.gmail.com</a></li>
+          
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul>
+          <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a class="pointer" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+          <li><a class="pointer" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</a></li>         
+        </ul>
+      </div>
+      
+    </div>
+<!--END HEADER TOP-->
+      
+    
+  </div>  
+  
+
+  <!--HEADER-->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo">
+        
+        <h1><a class="glow" href="index.html">ROBOTECH</a></h1>
+        <p>Robots &amp Fun</p>
+        
+      </div>
+      <nav id="mainav">
+        
+        <ul class="clear">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="drop" href="#">NEWS</a>
+            <ul>
+              <li><a href="live.html">LIVE</a></li>
+              <li><a href="updates.html">UPDATES</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="#">ROBOVERSE</a>
+            <ul>
+              <li><a href="theMacrosSaga.html">THE MACROS SAGA</a></li>
+              <li><a href="theRobotechMasters.html">THE ROBOTECH MASTERS</a></li>
+              <li><a href="theNewGeneration.html">THE NEW GENERATION</a></li>
+              <li><a href="theSentinels.html">THE SENTINELS</a></li>
+              <li><a href="theShadowChronicles.html">THE SHADOW CHRONICLES</a></li>               
+            </ul>
+          </li>
+          <li><a href="https://robotech.com/forums">FORUMS</a></li>
+          <li class="active"><a href="https://robotech.com/store">STORE</a></li>
+          <li><a href="about.html">ABOUT</a></li>          
+        </ul>
+        
+      </nav>
+    </header>
+  </div>
+  <!--END HEADER-->
+
+  <!--Background-->
+    <img class="bkground" src="pictures\robotech-macross-wallpaper_5623155.jpg">        
+  <!--End Background-->
+  
+  <!--Login Form-->
+ 
+    <div id="id01" class="modal">
+    
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="pictures/avatar/logo 3.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" >
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a class="pointer" id="id04" onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="color: cyan">password?</a></span>
+        </div>
+      </form>
+    </div>
+         
+  <!--End Login Form-->
+
+
+  <!--Register Form-->
+
+    
+      <div id="id02" class="modal">
+      
+        <form class="modal-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            
+          </div>
+      
+          <div class="container">
+            <h2>Register account</h2>
+            <label for="eml"><b>Email</b></label>
+            <input type="email" placeholder="Enter email" name="eml" required>
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw2"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw" required>
+              
+            <span>By creating an account you agree to our <a href="https://en.wikipedia.org/wiki/Privacy_policy" style="color: cyan">Terms & Privacy.</a></span>
+            <button type="submit">Register</button>
+            
+          </div>
+      
+          <div class="container" >            
+            <span>Already have an account? <a id="id03" class="pointer" onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal" style="color: cyan">Sign in</a></span>
+          </div>
+        </form>
+      </div>
+
+  <!--End Register Form-->
+
+  <!--Forgot Password Form-->
+    <div id="id05" class="modal2">
+      
+        <form class="modal2-content animate" action="/action_page.php">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id05').style.display='none'" class="close2" title="Close Modal">&times;</span>
+            
+          </div>
+          
+          <div class="container">
+              <h2>Password recovery</h2>
+            <label for="eml"><b>Enter your email</b></label>
+            <input type="email" placeholder="Enter email" name="eml" required>             
+            
+            <button type="submit">Send Email</button>
+            
+          </div>
+        </form>
+      </div>
+    <!--End Forgot Password Form-->
+  
+  
+  <!--FOOTER-->
+  <div class="wrapper row2">
+    <footer id="footer" class="hoc clear">
+     
+      <div class="one_third first">
+        <h2 class="heading">ROBOTECH</h2>
+        <nav>
+          <ul class="nospace">
+            <li><a href="index.html"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="about.html">About</a></li>            
+            <li><a href="https://en.wikipedia.org/wiki/Terms_of_service">Terms</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Privacy">Privacy</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookies</a></li>                                  
+          </ul>
+        </nav>
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="https://www.facebook.com/robotech"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-twitter" href="https://twitter.com/robotechnews"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+        </ul>
+      </div>
+      <div class="one_third">
+        <h2 class="heading">How To Find Us</h2>
+        <ul class="nospace linklist contact">
+          <li><i style="color:red" class="fa fa-map-marker"></i>
+            <address>
+              Prva ulica br. 10, Belgrade, 11000
+            </address>
+          </li>
+          <li><i style="color:red" class="fa fa-phone"></i> (+381) 011/ 1234-567</li>
+          <li><i style="color:red" class="fa fa-envelope-o"></i><a style="color: #ffbf00" class="js-emaillink" href="mailto:info@robot.gmail.com">info@robot.gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="one_third">
+        <h2 class="heading">Send Us Mail</h2>
+        <form method="post" action="#">
+          <fieldset>
+            <legend>Newsletter:</legend>
+            <input class="btmspace-15" type="text" value="" placeholder="Name">
+            <input class="btmspace-15" type="text" value="" placeholder="Email">
+            <button type="submit" value="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+      
+    </footer>
+  </div>
+  <!--COPYRIGHT-->
+    <div id="copyright">     
+      <p style="text-align: center">Copyright &copy; 2019 - All Rights Reserved       
+    </div>
+  <!--END COPYRIGHT-->
+  
+  <!--Back To Top-->
+  <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+  <!--End Back To Top-->
+
+
+  <!--END FOOTER-->
+
+<!-- ################################################################################################ -->
+
+  <!-- JAVASCRIPTS -->
+  <script src="scripts/jquery.backtotop.js"></script>
+  <script src="scripts/login.js"></script>
+  
+</body>
+
+</html>
