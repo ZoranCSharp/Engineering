@@ -19,3 +19,8 @@
  * <i>Oracle SQL Developer - Data Modeler</i>
  * <i>Queries</i>
  * <i>Modeling Base</i>
+
+<b><a href="https://github.com/ZoranKJava/Engineering/tree/master/JPA">JPA</a></b>
+ * <i>Oracle SQL Developer</i>
+ * <i>Oracle SQL Developer - Data Modeler</i>
+ * <i>EclipseLink</i>
