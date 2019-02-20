@@ -28,6 +28,7 @@
 <b><a href="https://github.com/ZoranKJava/Engineering/tree/master/Spring">Spring</a></b>
  * <i>Oracle SQL Developer</i>
  * <i>Oracle SQL Developer - Data Modeler</i>
- * <i>EclipseLink</i>
-
+ * <i>Eclipse</i>
+ * <i>Spring Tools</i>
+ 
 
