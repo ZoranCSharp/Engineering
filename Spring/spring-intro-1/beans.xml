@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-destroy-method="onDestroy" default-init-method="onCreate">
+
+
+
+
+
+	<!-- <bean id="person" class="com.lab.softwear.engineering.spring.Person"
+		init-method="onCreate" destroy-method="onDestroy">
+	<constructor-arg name="ime" type="String" value="Pera Peric"></constructor-arg>
+	<constructor-arg name="jmbg" type="int" value="15565"></constructor-arg>
+	<property name="age" value="30"></property>
+	<property name="address" ref="address"></property>
+	</bean>
+	<bean id="address"
+		class="com.lab.softwear.engineering.spring.Address">
+	<constructor-arg name="street" type="String"
+		value="Milutina Milankovica 17B">
+	</constructor-arg>
+	<constructor-arg name="postalCode" type="String" value="11070"></constructor-arg>
+	</bean> -->
+	
+	
+	<!-- <bean id="basket"
+		class="com.lab.softwear.engineering.spring.FruitBasket">
+	<constructor-arg name="name" type="String"
+		value="My fruit basket">
+	</constructor-arg>
+	<constructor-arg>
+	set umesto list brise duplikate
+		<list>
+			<value>apple</value>
+			<value>orange</value>
+			<value>kiwi</value>
+			<value>orange</value>
+			<value>pear</value>
+			<value>orange</value>
+			<value>bananna</value>
+			<value>bananna</value>
+		</list>
+	</constructor-arg>
+	</bean> -->
+	<bean id="lion"
+		class="com.lab.softwear.engineering.spring.Animal">
+	<property name="name" value="Joca"></property>
+	<property name="type" value="Lion"></property>
+	
+	
+	</bean>
+	<bean id="Svinja"
+		class="com.lab.softwear.engineering.spring.Animal">
+	<property name="name" value="Pera"></property>
+	
+	<property name="type" value="svinja"></property>
+	</bean>
+	<bean id="Majmun"
+		class="com.lab.softwear.engineering.spring.Animal">
+	<property name="name" value="Djole"></property>
+	<property name="type" value="majmun"></property>
+	</bean>
+	<bean id="zoo" class="com.lab.softwear.engineering.spring.Zoo">
+		<property name="greatest" value="lion"></property>
+		<property name="animals">
+			<list>
+			<ref bean="lion"/>
+			<ref bean="Svinja"/>
+			<ref bean="Majmun"/>
+			</list>
+		</property>
+	</bean>
+	<bean id="lunch"
+		class="com.lab.softwear.engineering.spring.Lunch">
+	<property name="animals">
+		<map>
+			<entry key="kukuruz" value-ref="Svinja"></entry>
+			<entry key="banana" value-ref="Majmun"></entry>
+			<entry key="midget" value-ref="lion"></entry>
+			
+		</map>
+	</property>
+		
+	</bean>
+</beans>
