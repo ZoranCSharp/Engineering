@@ -30,6 +30,21 @@ public class Offer {
 	public void setText(String text) {
 		this.text = text;
 	}
+	
+	
+	public Offer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public Offer(int id, String name, String email, String text) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.text = text;
+	}
 	@Override
 	public String toString() {
 		return "Offer [id=" + id + ", name=" + name + ", email=" + email + ", text=" + text + "]";

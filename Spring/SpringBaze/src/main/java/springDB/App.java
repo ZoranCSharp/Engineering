@@ -1,5 +1,6 @@
 package springDB;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
@@ -28,6 +29,19 @@ public class App {
 		 * o.setEmail("milan.m@gmail.com"); o.setText("E");
 		 */
 
+		
+		List<Offer> batch = new ArrayList();
+		  batch.add(new Offer(5,"Torba Torbica","torbica@gmail.com","CSS"));		
+		  batch.add(new Offer(6,"Djordje Djordjevic","djordje@gmail.com","JavaScritp"));
+		  batch.add(new Offer(7,"Dzordzina Dzordjevic","dzordzina@gmail.com","C#"));
+		  batch.add(new Offer(8,"Sofronije Sofronijevic","sofronije@gmail.com","C+"));
+		 
+		int[] returnValues = offersDao.create(batch);
+		for(int value:returnValues) {
+			
+			System.out.println("Updated " + value +  "rows.");
+		}
+		
 		List<Offer> list = offersDao.getOffers();
 		for (Offer offer : list) {
 			System.out.println(offer);
