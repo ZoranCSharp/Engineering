@@ -9,6 +9,7 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
@@ -69,6 +70,42 @@ public class OffersDAO {
 			
 		});
 		
+	}
+	
+	//delete by id, returns true if delete was successfull
+	public boolean deleteById(int id) {
+		
+		MapSqlParameterSource params = new MapSqlParameterSource();
+		params.addValue("id", id); //name  parameter
+		
+		return jdbc.update("DELETE FROM offers WHERE id=:id", params) == 1;
+		
+	}
+	
+	
+	//insert 
+	public  boolean insert(Offer offer) {
+		
+		/*
+		 * MapSqlParameterSource params = new MapSqlParameterSource();
+		 * params.addValue("id", offer.getId()); //name parameter
+		 * params.addValue("name", offer.getName()); params.addValue("email",
+		 * offer.getEmail()); params.addValue("text", offer.getText());
+		 */
+		
+		//only for INSERT
+		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(offer);
+		
+		return jdbc.update("INSERT INTO offers(id, name,email, text) VALUES (:id, :name, :email, :text)", params) == 1;
+	}
+	
+	
+	//update one offer in db
+	public boolean updateById(Offer offer) {
+		
+		BeanPropertySqlParameterSource params = new BeanPropertySqlParameterSource(offer);
+		
+		return jdbc.update("UPDATE offers SET name=:name, email=:email, text=:text WHERE id=:id", params) == 1;
 	}
 	
 }
