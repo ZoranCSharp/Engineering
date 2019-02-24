@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:aop="http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 
 
 
-	
+	<bean id="logger" class="com.fakultet.software.spring.Logger">
+	</bean>
+	<bean id="faculty" class="com.fakultet.software.spring.Faculty">
+		<property name="name" value="Fakultet"></property>
+		<property name="address" value="Bez Broja 1"></property>
 
-	
-	<context:component-scan
-		base-package="com.fakultet.software.spring">
-	</context:component-scan>
-	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+		<property name="subjectsFaculty">
+			<list>
+				<value>Spring</value>
+				<value>Oracle</value>
+				<value>Java</value>
+				<value>HTML</value>
+
+			</list>
+		</property>
+	</bean>
+
+	<bean id="professor"
+		class="com.fakultet.software.spring.Professor">
+		<property name="faculty" ref="faculty"></property>
+
+		<property name="subjectsProfessor">
+			<list>
+				<value>Spring</value>
+				<value>Oracle</value>
+				<value>Java</value>
+
+			</list>
+		</property>
+		<property name="name" value="Petar Petrovic"></property>
+	</bean>
+	<aop:config>
+		<aop:pointcut
+			expression="execution(void com.fakultet.software.spring.Professor.addSubject(..))"
+			id="addPointcut" />
+
+		<aop:aspect id="loggeraspect" ref="logger">
+			<aop:after-throwing method="error"
+				pointcut-ref="addPointcut" />
+			<aop:after-returning method="added"
+				pointcut-ref="addPointcut" />
+
+			<aop:before method="prepareToAddSubject"
+				pointcut-ref="addPointcut" />
+
+
+
+
+		</aop:aspect>
+	</aop:config>
+
+
 </beans>

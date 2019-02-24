@@ -1,23 +1,15 @@
 package com.fakultet.software.spring;
 
 
-import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class Faculty {
 	private String name;
 	private String address;
 	private List<String> subjectsFaculty;
-	
-	
 	public Faculty() {
-		this.name = "Fakultet";
-		this.address = "Bez Broja 1";
-		
-		subjectsFaculty = Arrays.asList("Spring","Oracle", "HTML", "FrontEnd", "Java");
+	
 	}
 	
 	

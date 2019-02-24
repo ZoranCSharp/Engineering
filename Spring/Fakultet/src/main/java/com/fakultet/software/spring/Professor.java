@@ -1,24 +1,15 @@
 package com.fakultet.software.spring;
 
-
-import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
 public class Professor {
 	private String name;
 	private Faculty faculty;
 	private List<String> subjectsProfessor;
 	
 	public Professor() {
-		
-		this.name = "Petar Petrovic";
-		this.faculty = faculty;
-		
-		subjectsProfessor = Arrays.asList("Spring","Oracle", "HTML");
+	
 	}
 
 	public String getName() {
@@ -32,7 +23,7 @@ public class Professor {
 	public Faculty getFaculty() {
 		return faculty;
 	}
-	@Autowired
+
 	public void setFaculty(Faculty faculty) {
 		this.faculty = faculty;
 	}
