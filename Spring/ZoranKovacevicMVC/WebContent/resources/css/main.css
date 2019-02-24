@@ -1,0 +1,16 @@
+@charset "ISO-8859-1";
+
+.formtable {
+	width: 400px;
+	padding: 10px;
+	border: 1px solid blue;
+}
+
+.label {
+	text-align: right;
+	vertical-align: top;
+}
+
+.input {
+	margin-left: 10px;
+}
