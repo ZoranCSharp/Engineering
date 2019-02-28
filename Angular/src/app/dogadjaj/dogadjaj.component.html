@@ -1,0 +1,31 @@
+
+<body>
+<app-input></app-input><br><hr>
+
+<!-- <button class="btn btn-success" (click)="fireEvent()">Upisi nesto</button> -->
+
+<label for="">Change this text</label><br>
+<label for=""></label><br>
+
+<input #box ><p>{{value}}</p><br>
+<button class="btn btn-success" (click)="onEnter(box.value)">Change</button>
+
+
+<br>
+<br>
+<input #newHero
+      (keyup.enter)="addHero(newHero.value)"
+      (blur)="addHero(newHero.value); newHero.value='' ">
+
+    <button class="btn btn-success" (click)="addHero(newHero.value)">Add</button><br>
+
+    <br><ul><li *ngFor="let hero of heroes">{{hero}}</li></ul><hr><br>
+
+
+    <input #box type="text" ><br><br>
+    <button class="btn btn-success" (click)="addToString(box.value)">Dodaj u niz</button> 
+    <button class="btn btn-danger" (click)="delete()">Delete</button> <hr>
+    
+    <p *ngFor="let item of array" >{{item}}</p>
+
+  </body>
